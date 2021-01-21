@@ -1,0 +1,22 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(self["webpackChunktravel_site"] = self["webpackChunktravel_site"] || []).push([["modal"],{
+
+/***/ "./app/assets/scripts/modules/Modal.js":
+/*!*********************************************!*\
+  !*** ./app/assets/scripts/modules/Modal.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Modal = /*#__PURE__*/function () {\n  function Modal() {\n    _classCallCheck(this, Modal);\n\n    this.injectHTML();\n    this.modal = document.querySelector(\".modal\");\n    this.closeIcon = document.querySelector(\".modal__close\");\n    this.events();\n  }\n\n  _createClass(Modal, [{\n    key: \"events\",\n    value: function events() {\n      var _this = this;\n\n      //close modal\n      this.closeIcon.addEventListener(\"click\", function (e) {\n        return _this.closeTheModal();\n      }); // press ESC\n\n      document.addEventListener(\"keyup\", function (e) {\n        _this.keyPressHandler(e);\n      });\n    }\n  }, {\n    key: \"openTheModal\",\n    value: function openTheModal() {\n      this.modal.classList.add(\"modal--is-visible\");\n    }\n  }, {\n    key: \"closeTheModal\",\n    value: function closeTheModal() {\n      this.modal.classList.remove(\"modal--is-visible\");\n    }\n  }, {\n    key: \"keyPressHandler\",\n    value: function keyPressHandler(e) {\n      if (e.keyCode == 27) {\n        this.closeTheModal();\n      }\n    }\n  }, {\n    key: \"injectHTML\",\n    value: function injectHTML() {\n      document.body.insertAdjacentHTML('beforeend', \"\\n\\t\\t\\t<div class=\\\"modal\\\">\\n\\t    <div class=\\\"modal__inner\\\">\\n\\t      <h2 class=\\\"section-title section-title--blue section-title--less-margin\\\"><img src=\\\"assets/images/icons/mail.svg\\\" class=\\\"section-title__icon\\\"> Get in <strong>Touch</strong></h2>\\n\\t      <div class=\\\"wrapper wrapper--narrow\\\">\\n\\t        <p class=\\\"modal__description\\\">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>\\n\\t      </div>\\n\\n\\t      <div class=\\\"social-icons\\\">\\n\\t        <a href=\\\"#\\\" class=\\\"social-icons__icon\\\"><img src=\\\"assets/images/icons/facebook.svg\\\" alt=\\\"Facebook\\\"></a>\\n\\t        <a href=\\\"#\\\" class=\\\"social-icons__icon\\\"><img src=\\\"assets/images/icons/twitter.svg\\\" alt=\\\"Twitter\\\"></a>\\n\\t        <a href=\\\"#\\\" class=\\\"social-icons__icon\\\"><img src=\\\"assets/images/icons/instagram.svg\\\" alt=\\\"Instagram\\\"></a>\\n\\t        <a href=\\\"#\\\" class=\\\"social-icons__icon\\\"><img src=\\\"assets/images/icons/youtube.svg\\\" alt=\\\"YouTube\\\"></a>\\n\\t      </div>\\n\\t    </div>\\n\\t    <div class=\\\"modal__close\\\">X</div>\\n\\t  </div>\\n\\t\\t\");\n    }\n  }]);\n\n  return Modal;\n}();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Modal);\n\n//# sourceURL=webpack://travel-site/./app/assets/scripts/modules/Modal.js?");
+
+/***/ })
+
+}]);
